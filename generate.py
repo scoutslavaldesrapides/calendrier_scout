@@ -26,15 +26,15 @@ def generate_ics(rows, tz, audience):
     """Generate ICS content for either parents or leaders."""
     events = []
 
-    desc_column = "Description (Parents)" if audience == "parents" else "Description (Leaders)"
+    desc_column = "Description (Parents)" if audience == "parents" else "Description (Animateurs)"
 
     for row in rows:
-        start = to_dt(row["Start Date"], row["Start Time"], tz)
-        end = to_dt(row["End Date"], row["End Time"], tz)
+        start = to_dt(row["Start_Date"], row["Start_Time"], tz)
+        end = to_dt(row["End_Date"], row["End_Time"], tz)
 
         desc = escape_description(row[desc_column])
 
-        uid = f"{audience}-{row['Start Date']}-{row['Title'].replace(' ', '-')}"
+        uid = f"{audience}-{row['Start_Date']}-{row['Title'].replace(' ', '-')}"
         title = row["Title"]
         location = row["Location"]
 
@@ -65,9 +65,9 @@ def main():
         f.write(parents_ics)
 
     # Generate leaders ICS
-    leaders_ics = generate_ics(rows, tz, "leaders")
+    leaders_ics = generate_ics(rows, tz, "animateurs")
     with open("calendrier/animateurs_aventurier.ics", "w", encoding="utf-8") as f:
-        f.write(leaders_ics)
+        f.write(animateurs_ics)
 
 if __name__ == "__main__":
     main()
