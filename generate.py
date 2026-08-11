@@ -6,7 +6,9 @@ import pytz
 
 def load_sheet(csv_url):
     r = requests.get(csv_url)
+    print("=== RAW CSV ===")
     print(r.text)
+    print("=== END RAW CSV ===")
     r.raise_for_status()
     rows = list(csv.DictReader(r.text.splitlines()))
     return rows
@@ -23,7 +25,11 @@ def escape_description(text):
     """ICS requires escaped newlines."""
     if not text:
         return ""
+    print("=== BEFORE CLEAN ===")
+    print(repr(text))
     text = text.replace("\r\n", "\n").replace("\r", "\n")
+    print("=== AFTER CLEAN ===")
+    print(repr(text))
     return text.replace("\n", "\\n")
 
 def generate_ics(rows, tz, audience):
@@ -56,6 +62,9 @@ LOCATION:{location}
 DESCRIPTION:{desc}
 END:VEVENT
 """
+        print("=== FINAL EVENT ===")
+        print(event)
+        print("=== END EVENT ===")
         events.append(event)
 
     return "BEGIN:VCALENDAR\nVERSION:2.0\n" + "".join(events) + "END:VCALENDAR\n"
