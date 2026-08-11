@@ -1,1 +1,39 @@
-
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+UID:animateurs-2026-08-28-Première-réunion
+DTSTAMP:20260828T190000
+DTSTART:20260828T190000
+DTEND:20260828T213000
+SUMMARY:Première réunion
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairies
+DESCRIPTION:19:00 Début 19:15 Ce qu'on a fait durant l'été19:30 Retour sur l'année 2025-202620:00 Visualiser les photos21:30 Fin de la réunion
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-2026-09-04-Réunion-d'accueil
+DTSTAMP:20260904T190000
+DTSTART:20260904T190000
+DTEND:20260904T213000
+SUMMARY:Réunion d'accueil
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairies
+DESCRIPTION:19:00 Début
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-2026-09-11-Montée
+DTSTAMP:20260911T190000
+DTSTART:20260911T190000
+DTEND:20260911T213000
+SUMMARY:Montée
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairies
+DESCRIPTION:19:00 Début
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-2026-10-23-Camp-d'automne
+DTSTAMP:20261023T190000
+DTSTART:20261023T190000
+DTEND:20261025T160000
+SUMMARY:Camp d'automne
+LOCATION:Lieu à déterminer
+DESCRIPTION:Camp d'automne des louveteaux et des aventuriers
+END:VEVENT
+END:VCALENDAR
