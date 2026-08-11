@@ -11,7 +11,9 @@ def load_sheet(csv_url):
     return rows
 
 def to_dt(date_str, time_str, tz):
-    """Convert sheet date+time into ICS datetime format."""
+    date_str = date_str.strip()
+    time_str = time_str.strip()
+    
     dt = datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M")
     dt = tz.localize(dt)
     return dt.strftime("%Y%m%dT%H%M%S")
@@ -23,18 +25,22 @@ def escape_description(text):
     return text.replace("\n", "\\n")
 
 def generate_ics(rows, tz, audience):
-    """Generate ICS content for either parents or leaders."""
     events = []
 
     desc_column = "Description (Parents)" if audience == "parents" else "Description (Animateurs)"
 
     for row in rows:
-        start = to_dt(row["Start_Date"], row["Start_Time"], tz)
-        end = to_dt(row["End_Date"], row["End_Time"], tz)
+        start_date = row["Start_Date"].strip()
+        start_time = row["Start_Time"].strip()
+        end_date = row["End_Date"].strip() if row["End_Date"].strip() else start_date
+        end_time - row["End_Time"].strip()
+        
+        start = to_dt(start_date, start_time, tz)
+        end = to_dt(end_date, end_time, tz)
 
         desc = escape_description(row[desc_column])
 
-        uid = f"{audience}-{row['Start_Date']}-{row['Title'].replace(' ', '-')}"
+        uid = f"{audience}-{start_date}-{row['Title'].replace(' ', '-')}"
         title = row["Title"]
         location = row["Location"]
 
