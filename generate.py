@@ -6,6 +6,7 @@ import pytz
 
 def load_sheet(csv_url):
     r = requests.get(csv_url)
+    print(r.text)
     r.raise_for_status()
     rows = list(csv.DictReader(r.text.splitlines()))
     return rows
