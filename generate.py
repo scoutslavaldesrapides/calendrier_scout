@@ -22,6 +22,7 @@ def escape_description(text):
     """ICS requires escaped newlines."""
     if not text:
         return ""
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
     return text.replace("\n", "\\n")
 
 def generate_ics(rows, tz, audience):
