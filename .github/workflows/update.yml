@@ -30,6 +30,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add calendriers/parents_aventurier.ics calendriers/animateurs/aventurier.ics
+          git add calendriers/parents_aventurier.ics calendriers/animateurs_aventurier.ics
           git commit -m "Auto-update ICS files" || echo "No changes to commit"
           git push
