@@ -4,13 +4,11 @@ import yaml
 from datetime import datetime
 import pytz
 import io
+import re
 
 def load_sheet(csv_url):
     r = requests.get(csv_url)
     r.raise_for_status()
-    print("=== RAW CSV ===")
-    print(r.text)
-    print("=== END RAW CSV ===")
     f = io.StringIO(r.text)
     rows = list(csv.DictReader(f))
     return rows
@@ -18,7 +16,6 @@ def load_sheet(csv_url):
 def to_dt(date_str, time_str, tz):
     date_str = date_str.strip()
     time_str = time_str.strip()
-    
     dt = datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M")
     dt = tz.localize(dt)
     return dt.strftime("%Y%m%dT%H%M%S")
@@ -27,12 +24,19 @@ def escape_description(text):
     """ICS requires escaped newlines."""
     if not text:
         return ""
-    print("=== BEFORE CLEAN ===")
-    print(repr(text))
     text = text.replace("\r\n", "\n").replace("\r", "\n")
-    print("=== AFTER CLEAN ===")
-    print(repr(text))
     return text.replace("\n", "\\n")
+
+def slugify(text):
+    text = text.lower()
+    text = re.sub(r"[^a-z0-9]+", "-", text)
+    return text.strip("-")
+
+def fold_ics_line(line):
+    folded = []
+    for i in range(0, len(line), 73):
+        folded.append(line[i:i+73])
+    return "\r\n ".join(folded)
 
 def generate_ics(rows, tz, audience):
     events = []
@@ -49,27 +53,34 @@ def generate_ics(rows, tz, audience):
         end = to_dt(end_date, end_time, tz)
 
         desc = escape_description(row[desc_column])
-
-        uid = f"{audience}-{start_date}-{row['Title'].replace(' ', '-')}"
         title = row["Title"]
         location = row["Location"]
+        uid = f"{audience}-{start_date.replace('-', '')}-{slugify(title)}"
 
-        event = f"""BEGIN:VEVENT
-UID:{uid}
-DTSTAMP:{start}
-DTSTART:{start}
-DTEND:{end}
-SUMMARY:{title}
-LOCATION:{location}
-DESCRIPTION:{desc}
-END:VEVENT
-"""
-        print("=== FINAL EVENT ===")
-        print(event)
-        print("=== END EVENT ===")
-        events.append(event)
+        event = []
+        event.append("BEGIN:VEVENT")
+        event.append(fold_ics_line(f"UID:{uid}"))
+        event.append(fold_ics_line(f"DTSTAMP:{start}"))
+        event.append(fold_ics_line(f"DTSTART:{start}"))
+        event.append(fold_ics_line(f"DTEND:{end}"))
+        event.append(fold_ics_line(f"SUMMARY:{title}"))
+        event.append(fold_ics_line(f"LOCATION:{location}"))
+        event.append(fold_ics_line(f"DESCRIPTION:{desc}"))
+        event.append("END:VEVENT")
 
-    return "BEGIN:VCALENDAR\nVERSION:2.0\n" + "".join(events) + "END:VCALENDAR\n"
+        events.append("\n".join(event))
+
+        ics = [
+            "BEGIN:VCALENDAR",
+            "VERSION:2.0",
+            "CALSCALE:GREGORIAN",
+            "METHOD:PUBLISH",
+            "PRODID:-//calendrier_scout//EN"
+        ]
+        ics.extend(events)
+        ics.append("END:VCALENDAR")
+
+    return "\n".join(ics)
 
 def main():
     config = yaml.safe_load(open("config.yaml"))
