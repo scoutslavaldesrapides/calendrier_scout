@@ -72,7 +72,7 @@ def main():
 
     # Generate leaders ICS
     leaders_ics = generate_ics(rows, tz, "animateurs")
-    with open("calendrier/animateurs_aventurier.ics", "w", encoding="utf-8") as f:
+    with open("calendriers/animateurs_aventurier.ics", "w", encoding="utf-8") as f:
         f.write(animateurs_ics)
 
 if __name__ == "__main__":
