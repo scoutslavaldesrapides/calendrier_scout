@@ -1,34 +1,40 @@
 BEGIN:VCALENDAR
 VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//calendrier_scout//EN
 BEGIN:VEVENT
-UID:parents-2026-08-28-Première-réunion
+UID:parents-20260828-premi-re-r-union
 DTSTAMP:20260828T190000
 DTSTART:20260828T190000
 DTEND:20260828T213000
 SUMMARY:Première réunion
-LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairies
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
 DESCRIPTION:Première réunion. 
 END:VEVENT
 BEGIN:VEVENT
-UID:parents-2026-09-04-Réunion-d'accueil
+UID:parents-20260904-r-union-d-accueil
 DTSTAMP:20260904T190000
 DTSTART:20260904T190000
 DTEND:20260904T213000
 SUMMARY:Réunion d'accueil
-LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairies
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
 DESCRIPTION:Réunion d'accueil
 END:VEVENT
 BEGIN:VEVENT
-UID:parents-2026-09-11-Montée
+UID:parents-20260911-mont-e
 DTSTAMP:20260911T190000
 DTSTART:20260911T190000
 DTEND:20260911T213000
 SUMMARY:Montée
-LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairies
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
 DESCRIPTION:Montée
 END:VEVENT
 BEGIN:VEVENT
-UID:parents-2026-10-23-Camp-d'automne
+UID:parents-20261023-camp-d-automne
 DTSTAMP:20261023T190000
 DTSTART:20261023T190000
 DTEND:20261025T160000
