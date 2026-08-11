@@ -7,7 +7,7 @@ DTSTART:20260828T190000
 DTEND:20260828T213000
 SUMMARY:Première réunion
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairies
-DESCRIPTION:19:00 Début 19:15 Ce qu'on a fait durant l'été19:30 Retour sur l'année 2025-202620:00 Visualiser les photos21:30 Fin de la réunion
+DESCRIPTION:19:00 Début \n19:15 Ce qu'on a fait durant l'été\n19:30 Retour sur l'année 2025-2026\n20:00 Visualiser les photos\n21:30 Fin de la réunion
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-2026-09-04-Réunion-d'accueil
