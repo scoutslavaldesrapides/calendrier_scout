@@ -3,14 +3,16 @@ import requests
 import yaml
 from datetime import datetime
 import pytz
+import io
 
 def load_sheet(csv_url):
     r = requests.get(csv_url)
+    r.raise_for_status()
     print("=== RAW CSV ===")
     print(r.text)
     print("=== END RAW CSV ===")
-    r.raise_for_status()
-    rows = list(csv.DictReader(r.text.splitlines()))
+    f = io.StringIO(r.text)
+    rows = list(csv.DictReader(f))
     return rows
 
 def to_dt(date_str, time_str, tz):
