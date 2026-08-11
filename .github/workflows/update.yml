@@ -1,4 +1,4 @@
-name: Update ICS Calendars
+name: Update Calendrier Scout
 
 on:
   schedule:
