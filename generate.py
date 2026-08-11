@@ -33,7 +33,7 @@ def generate_ics(rows, tz, audience):
         start_date = row["Start_Date"].strip()
         start_time = row["Start_Time"].strip()
         end_date = row["End_Date"].strip() if row["End_Date"].strip() else start_date
-        end_time - row["End_Time"].strip()
+        end_time = row["End_Time"].strip()
         
         start = to_dt(start_date, start_time, tz)
         end = to_dt(end_date, end_time, tz)
