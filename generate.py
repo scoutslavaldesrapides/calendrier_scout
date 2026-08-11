@@ -71,7 +71,7 @@ def main():
         f.write(parents_ics)
 
     # Generate leaders ICS
-    leaders_ics = generate_ics(rows, tz, "animateurs")
+    animateurs_ics = generate_ics(rows, tz, "animateurs")
     with open("calendriers/animateurs_aventurier.ics", "w", encoding="utf-8") as f:
         f.write(animateurs_ics)
 
