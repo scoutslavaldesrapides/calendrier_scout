@@ -2,7 +2,7 @@ import csv
 import requests
 import yaml
 from datetime import datetime
-import pytz
+from zoneinfo import ZoneInfo
 import io
 import re
 
@@ -13,15 +13,12 @@ def load_sheet(csv_url):
     rows = list(csv.DictReader(f))
     return rows
 
-def to_dt(date_str, time_str, tz):
-    date_str = date_str.strip()
-    time_str = time_str.strip()
+def to_dt(date_str, time_str):
     dt = datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M")
-    dt = tz.localize(dt)
+    dt = dt.replace(tzinfo=ZoneInfo("America/Toronto"))
     return dt.strftime("%Y%m%dT%H%M%S")
 
 def escape_description(text):
-    """ICS requires escaped newlines."""
     if not text:
         return ""
     text = text.replace("\r\n", "\n").replace("\r", "\n")
@@ -38,21 +35,34 @@ def fold_ics_line(line):
         folded.append(line[i:i+73])
     return "\r\n ".join(folded)
 
+def build_description(row, audience):
+    parent_desc = escape_description(row["Description (Parents)"].strip())
+    anim_desc = escape_description(row["Description (Animateurs)"].strip())
+    if audience == "parents":
+        return parent_desc
+    parts = []
+    if parent_desc:
+        parts.append(parent_desc)
+    if anim_desc:
+        parts.append(anim_desc)
+    return "\\n".join(parts)
+
 def generate_ics(rows, tz, audience):
     events = []
 
-    desc_column = "Description (Parents)" if audience == "parents" else "Description (Animateurs)"
-
     for row in rows:
+        parent_desc = row["Description (Parents)"].strip()
+        if audience == "parents" and not parent_desc:
+            continue
         start_date = row["Start_Date"].strip()
         start_time = row["Start_Time"].strip()
         end_date = row["End_Date"].strip() if row["End_Date"].strip() else start_date
         end_time = row["End_Time"].strip()
         
-        start = to_dt(start_date, start_time, tz)
-        end = to_dt(end_date, end_time, tz)
+        start = to_dt(start_date, start_time)
+        end = to_dt(end_date, end_time)
 
-        desc = escape_description(row[desc_column])
+        desc = build_description(row, audience_
         title = row["Title"]
         location = row["Location"]
         uid = f"{audience}-{start_date.replace('-', '')}-{slugify(title)}"
@@ -85,17 +95,14 @@ def generate_ics(rows, tz, audience):
 def main():
     config = yaml.safe_load(open("config.yaml"))
     csv_url = config["sheet_csv_url"]
-    tz = pytz.timezone(config["timezone"])
 
     rows = load_sheet(csv_url)
 
-    # Generate parents ICS
-    parents_ics = generate_ics(rows, tz, "parents")
+    parents_ics = generate_ics(rows, "parents")
     with open("calendriers/parents_aventurier.ics", "w", encoding="utf-8") as f:
         f.write(parents_ics)
 
-    # Generate leaders ICS
-    animateurs_ics = generate_ics(rows, tz, "animateurs")
+    animateurs_ics = generate_ics(rows, "animateurs")
     with open("calendriers/animateurs_aventurier.ics", "w", encoding="utf-8") as f:
         f.write(animateurs_ics)
 
