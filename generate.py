@@ -47,7 +47,7 @@ def build_description(row, audience):
         parts.append(anim_desc)
     return "\\n".join(parts)
 
-def generate_ics(rows, tz, audience):
+def generate_ics(rows, audience):
     events = []
 
     for row in rows:
@@ -62,7 +62,7 @@ def generate_ics(rows, tz, audience):
         start = to_dt(start_date, start_time)
         end = to_dt(end_date, end_time)
 
-        desc = build_description(row, audience_
+        desc = build_description(row, audience)
         title = row["Title"]
         location = row["Location"]
         uid = f"{audience}-{start_date.replace('-', '')}-{slugify(title)}"
