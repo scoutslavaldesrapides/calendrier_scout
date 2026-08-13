@@ -11,7 +11,7 @@ DTEND:20260828T213000
 SUMMARY:PremiÃ¨re rÃ©union
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:PremiÃ¨re rÃ©union. 
+DESCRIPTION:PremiÃ¨re rÃ©union.
 END:VEVENT
 BEGIN:VEVENT
 UID:parents-20260904-r-union-d-accueil
@@ -82,7 +82,7 @@ SUMMARY:RÃ©union de NoÃ«l + dodo au local
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
 DESCRIPTION:RÃ©union de NoÃ«l\nDodo au local\nDerniÃ¨re rÃ©union avec NoÃ
- «l. Reprise des rÃ©unions le 8 janvier\n
+ «l. Reprise des rÃ©unions le 8 janvier
 END:VEVENT
 BEGIN:VEVENT
 UID:parents-20261205-distribution-de-publicit
@@ -178,14 +178,5 @@ SUMMARY:DerniÃ¨re rÃ©union
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
 DESCRIPTION:DerniÃ¨re rÃ©union avant le camp d'Ã©tÃ©
-END:VEVENT
-BEGIN:VEVENT
-UID:parents-20270711-camp-d-t-aventurier
-DTSTAMP:20270711T090000
-DTSTART:20270711T090000
-DTEND:20270718T140000
-SUMMARY:Camp d'Ã©tÃ© aventurier
-LOCATION:Lieu Ã  dÃ©terminer
-DESCRIPTION:
 END:VEVENT
 END:VCALENDAR

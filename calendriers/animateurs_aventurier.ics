@@ -11,9 +11,9 @@ DTEND:20260828T213000
 SUMMARY:PremiÃ¨re rÃ©union
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:19:00 DÃ©but \n19:15 Ce qu'on a fait durant l'Ã©tÃ©\n19:30 Re
- tour sur l'annÃ©e 2025-2026\n20:00 Visualiser les photos\n21:30 Fin de la
-  rÃ©union
+DESCRIPTION:PremiÃ¨re rÃ©union.\n19:00 DÃ©but \n19:15 Ce qu'on a fait dur
+ ant l'Ã©tÃ©\n19:30 Retour sur l'annÃ©e 2025-2026\n20:00 Visualiser les ph
+ otos\n21:30 Fin de la rÃ©union
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20260904-r-union-d-accueil
@@ -23,7 +23,7 @@ DTEND:20260904T213000
 SUMMARY:RÃ©union d'accueil
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:19:00 DÃ©but
+DESCRIPTION:RÃ©union d'accueil\n19:00 DÃ©but
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20260911-mont-e
@@ -33,7 +33,7 @@ DTEND:20260911T213000
 SUMMARY:MontÃ©e
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:19:00 DÃ©but
+DESCRIPTION:MontÃ©e\n19:00 DÃ©but
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20260919-blitz-calendrier
@@ -43,7 +43,8 @@ DTEND:20260919T160000
 SUMMARY:Blitz Calendrier
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:
+DESCRIPTION:Campagne de financement de vente de calendrier\nCette journÃ©
+ e est pour aider les jeunes Ã  vendre leurs calendriers
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20260925-aga
@@ -53,7 +54,7 @@ DTEND:20260925T200000
 SUMMARY:AGA
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:
+DESCRIPTION:AssemblÃ©e gÃ©nÃ©rale\nUn parent par enfant
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20261023-camp-d-automne
@@ -62,7 +63,8 @@ DTSTART:20261023T190000
 DTEND:20261025T160000
 SUMMARY:Camp d'automne
 LOCATION:Lieu Ã  dÃ©terminer
-DESCRIPTION:Camp d'automne des louveteaux et des aventuriers
+DESCRIPTION:Camp d'automne des louveteaux et des aventuriers\nCamp d'auto
+ mne des louveteaux et des aventuriers
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20261030-r-union-d-halloween
@@ -72,7 +74,7 @@ DTEND:20261030T213000
 SUMMARY:RÃ©union d'Halloween
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:
+DESCRIPTION:RÃ©union d'Halloween\nRÃ©union dÃ©guisÃ©
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20261204-r-union-de-no-l-dodo-au-local
@@ -82,7 +84,8 @@ DTEND:20261205T100000
 SUMMARY:RÃ©union de NoÃ«l + dodo au local
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:
+DESCRIPTION:RÃ©union de NoÃ«l\nDodo au local\nDerniÃ¨re rÃ©union avec NoÃ
+ «l. Reprise des rÃ©unions le 8 janvier
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20261205-distribution-de-publicit
@@ -92,7 +95,8 @@ DTEND:20261205T140000
 SUMMARY:Distribution de publicitÃ©
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:
+DESCRIPTION:Distribution de publicitÃ©s en vue de notre collecte de boute
+ illes du 9 janvier 2027
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20261205-promesse-aventurier
@@ -102,7 +106,10 @@ DTEND:20261206T120000
 SUMMARY:Promesse aventurier
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:
+DESCRIPTION:Promesse aventurier\nL'aprÃ¨s-midi du 5 dÃ©cembre sera pour l
+ a prÃ©paration de la promesse\nIl y aura un coucher au local le 5 dÃ©cemb
+ re\nLa cÃ©rÃ©monie de la promesse est le 6 dÃ©cembre en avant-midi. \nLes
+  parents sont invitÃ©s Ã  y assister
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20270108-reprise-des-r-union
@@ -112,7 +119,7 @@ DTEND:20270108T213000
 SUMMARY:Reprise des rÃ©union
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:
+DESCRIPTION:PremiÃ¨re rÃ©union de Janvier
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20270109-collecte-de-bouteilles-janvier
@@ -122,7 +129,7 @@ DTEND:20270109T160000
 SUMMARY:Collecte de bouteilles Janvier
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:
+DESCRIPTION:Campagne de financement de collecte de bouteilles
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20270226-f-te-de-bp
@@ -132,7 +139,7 @@ DTEND:20270226T213000
 SUMMARY:FÃªte de BP
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:
+DESCRIPTION:RÃ©union spÃ©cial pour la semaine scoute
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20270320-distribution-de-publicit
@@ -142,7 +149,8 @@ DTEND:20270320T140000
 SUMMARY:Distribution de publicitÃ©
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:
+DESCRIPTION:Distribution de publicitÃ©s en vue de notre collecte de boute
+ illes du 3 avril 2027
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20270326-pas-de-r-union-semaine-de-rel-che
@@ -152,7 +160,7 @@ DTEND:20270326T213000
 SUMMARY:Pas de rÃ©union - Semaine de relÃ¢che
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:
+DESCRIPTION:Pas de rÃ©union - Semaine de relÃ¢che
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20270403-collecte-de-bouteilles-avril
@@ -162,7 +170,7 @@ DTEND:20270403T160000
 SUMMARY:Collecte de bouteilles Avril
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:
+DESCRIPTION:Campagne de financement de collecte de bouteilles
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20270604-derni-re-r-union
@@ -172,7 +180,7 @@ DTEND:20270604T213000
 SUMMARY:DerniÃ¨re rÃ©union
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:
+DESCRIPTION:DerniÃ¨re rÃ©union avant le camp d'Ã©tÃ©
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20270711-camp-d-t-aventurier
