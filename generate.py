@@ -9,7 +9,7 @@ import re
 def load_sheet(csv_url):
     r = requests.get(csv_url)
     r.raise_for_status()
-    f = io.StringIO(r.text)
+    f = io.StringIO(r.content.decode("utf-8"))
     rows = list(csv.DictReader(f))
     return rows
 
