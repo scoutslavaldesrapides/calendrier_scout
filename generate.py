@@ -47,7 +47,7 @@ def build_description(row, audience):
         parts.append(anim_desc)
     return "\\n".join(parts)
 
-def generate_ics(rows, audience):
+def generate_ics(rows, audience, label):
     events = []
     print(f"--- generate_ics for {label} ({audience}) ---")
     print("rows:", len(rows))
@@ -80,7 +80,7 @@ def generate_ics(rows, audience):
         event.append("END:VEVENT")
 
         events.append("\n".join(event))
-
+    print(f"events for {label} ({audience}):", len(events))
     ics = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
@@ -101,19 +101,19 @@ def main():
     print("Aventurier rows loaded:", len(sheet_aventurier))
 
 
-    parents_aventurier = generate_ics(sheet_aventurier, "parents")
+    parents_aventurier = generate_ics(sheet_aventurier, "parents", "aventurier")
     with open("calendriers/parents_aventurier.ics", "w", encoding="utf-8") as f:
         f.write(parents_aventurier)
 
-    animateurs_aventurier = generate_ics(sheet_aventurier, "animateurs")
+    animateurs_aventurier = generate_ics(sheet_aventurier, "animateurs", "aventurier")
     with open("calendriers/animateurs_aventurier.ics", "w", encoding="utf-8") as f:
         f.write(animateurs_aventurier)
 
-    parents_castor = generate_ics(sheet_castor, "parents")
+    parents_castor = generate_ics(sheet_castor, "parents", "castor")
     with open("calendriers/parents_castor.ics", "w", encoding="utf-8") as f:
         f.write(parents_castor)
 
-    animateurs_castor = generate_ics(sheet_castor, "animateurs")
+    animateurs_castor = generate_ics(sheet_castor, "animateurs", "castor")
     with open("calendriers/animateurs_castor.ics", "w", encoding="utf-8") as f:
         f.write(animateurs_castor)
 
