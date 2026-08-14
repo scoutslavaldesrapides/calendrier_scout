@@ -49,13 +49,10 @@ def build_description(row, audience):
 
 def generate_ics(rows, audience):
     events = []
+    print(f"--- generate_ics for {label} ({audience}) ---")
+    print("rows:", len(rows))
 
     for row in rows:
-        print("---- NEW ROW ----")
-        print("Raw row:", row)
-        print("Start_Date:", repr(row.get("Start_Date")))
-        print("Parents desc raw:", repr(row.get("Description (Parents)")))
-        print("Animateurs desc raw:", repr(row.get("Description (Animateurs)")))
         parent_desc = row["Description (Parents)"].strip()
         if audience == "parents" and parent_desc == "":
             continue
@@ -83,7 +80,7 @@ def generate_ics(rows, audience):
         event.append("END:VEVENT")
 
         events.append("\n".join(event))
-
+    print(f"events for {label} ({audience}):", len(events))
     ics = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
