@@ -52,7 +52,7 @@ def generate_ics(rows, audience):
 
     for row in rows:
         parent_desc = row["Description (Parents)"].strip()
-        if audience == "parents" and not parent_desc:
+        if audience == "parents" and parent_desc == "":
             continue
         start_date = row["Start_Date"].strip()
         start_time = row["Start_Time"].strip()
@@ -79,15 +79,15 @@ def generate_ics(rows, audience):
 
         events.append("\n".join(event))
 
-        ics = [
-            "BEGIN:VCALENDAR",
-            "VERSION:2.0",
-            "CALSCALE:GREGORIAN",
-            "METHOD:PUBLISH",
-            "PRODID:-//calendrier_scout//EN"
-        ]
-        ics.extend(events)
-        ics.append("END:VCALENDAR")
+    ics = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "CALSCALE:GREGORIAN",
+        "METHOD:PUBLISH",
+        "PRODID:-//calendrier_scout//EN"
+    ]
+    ics.extend(events)
+    ics.append("END:VCALENDAR")
 
     return "\n".join(ics)
 
