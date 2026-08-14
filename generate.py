@@ -80,7 +80,7 @@ def generate_ics(rows, audience):
         event.append("END:VEVENT")
 
         events.append("\n".join(event))
-    print(f"events for {label} ({audience}):", len(events))
+
     ics = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
