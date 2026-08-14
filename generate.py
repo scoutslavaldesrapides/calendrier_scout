@@ -47,10 +47,8 @@ def build_description(row, audience):
         parts.append(anim_desc)
     return "\\n".join(parts)
 
-def generate_ics(rows, audience, label):
+def generate_ics(rows, audience):
     events = []
-    print(f"--- generate_ics for {label} ({audience}) ---")
-    print("rows:", len(rows))
 
     for row in rows:
         parent_desc = row["Description (Parents)"].strip()
@@ -80,7 +78,7 @@ def generate_ics(rows, audience, label):
         event.append("END:VEVENT")
 
         events.append("\n".join(event))
-    print(f"events for {label} ({audience}):", len(events))
+
     ics = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
@@ -97,23 +95,20 @@ def main():
     config = yaml.safe_load(open("config.yaml"))
     sheet_aventurier = load_sheet(config["sheet_csv_aventurier"])
     sheet_castor = load_sheet(config["sheet_csv_castors"])
-    print("Castors rows loaded:", len(sheet_castor))
-    print("Aventurier rows loaded:", len(sheet_aventurier))
 
-
-    parents_aventurier = generate_ics(sheet_aventurier, "parents", "aventurier")
+    parents_aventurier = generate_ics(sheet_aventurier, "parents")
     with open("calendriers/parents_aventurier.ics", "w", encoding="utf-8") as f:
         f.write(parents_aventurier)
 
-    animateurs_aventurier = generate_ics(sheet_aventurier, "animateurs", "aventurier")
+    animateurs_aventurier = generate_ics(sheet_aventurier, "animateurs")
     with open("calendriers/animateurs_aventurier.ics", "w", encoding="utf-8") as f:
         f.write(animateurs_aventurier)
 
-    parents_castor = generate_ics(sheet_castor, "parents", "castor")
+    parents_castor = generate_ics(sheet_castor, "parents")
     with open("calendriers/parents_castor.ics", "w", encoding="utf-8") as f:
         f.write(parents_castor)
 
-    animateurs_castor = generate_ics(sheet_castor, "animateurs", "castor")
+    animateurs_castor = generate_ics(sheet_castor, "animateurs")
     with open("calendriers/animateurs_castor.ics", "w", encoding="utf-8") as f:
         f.write(animateurs_castor)
 
