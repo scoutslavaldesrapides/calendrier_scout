@@ -94,7 +94,7 @@ def generate_ics(rows, audience):
 def main():
     config = yaml.safe_load(open("config.yaml"))
     sheet_aventurier = load_sheet(config["sheet_csv_aventurier"])
-    sheet_castor = load_sheet(config["sheet_csv_castors"]))
+    sheet_castor = load_sheet(config["sheet_csv_castors"])
 
     parents_aventurier = generate_ics(sheet_aventurier, "parents")
     with open("calendriers/parents_aventurier.ics", "w", encoding="utf-8") as f:
