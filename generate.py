@@ -61,7 +61,6 @@ def generate_ics(rows, audience):
         
         start = to_dt(start_date, start_time)
         end = to_dt(end_date, end_time)
-        dtstamp = datetime.now(ZoneInfo("UTC")).strftime("%Y%m%dT%H%M%SZ")
 
         desc = build_description(row, audience)
         title = row["Title"]
@@ -71,7 +70,6 @@ def generate_ics(rows, audience):
         event = []
         event.append("BEGIN:VEVENT")
         event.append(fold_ics_line(f"UID:{uid}"))
-        event.append(fold_ics_line(f"DTSTAMP:{dtstamp}"))
         event.append(fold_ics_line(f"DTSTART:{start}"))
         event.append(fold_ics_line(f"DTEND:{end}"))
         event.append(fold_ics_line(f"SUMMARY:{title}"))
