@@ -51,6 +51,11 @@ def generate_ics(rows, audience):
     events = []
 
     for row in rows:
+        print("---- NEW ROW ----")
+        print("Raw row:", row)
+        print("Start_Date:", repr(row.get("Start_Date")))
+        print("Parents desc raw:", repr(row.get("Description (Parents)")))
+        print("Animateurs desc raw:", repr(row.get("Description (Animateurs)")))
         parent_desc = row["Description (Parents)"].strip()
         if audience == "parents" and parent_desc == "":
             continue
@@ -95,6 +100,9 @@ def main():
     config = yaml.safe_load(open("config.yaml"))
     sheet_aventurier = load_sheet(config["sheet_csv_aventurier"])
     sheet_castor = load_sheet(config["sheet_csv_castors"])
+    print("Castors rows loaded:", len(sheet_castor))
+    print("Aventurier rows loaded:", len(sheet_aventurier))
+
 
     parents_aventurier = generate_ics(sheet_aventurier, "parents")
     with open("calendriers/parents_aventurier.ics", "w", encoding="utf-8") as f:
