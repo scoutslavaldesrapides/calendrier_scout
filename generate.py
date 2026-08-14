@@ -93,17 +93,24 @@ def generate_ics(rows, audience):
 
 def main():
     config = yaml.safe_load(open("config.yaml"))
-    csv_url = config["sheet_csv_url"]
+    sheet_aventurier = load_sheet(config["sheet_csv_aventurier"])
+    sheet_castor = load_sheet(config["sheet_csv_castors"]))
 
-    rows = load_sheet(csv_url)
-
-    parents_ics = generate_ics(rows, "parents")
+    parents_aventurier = generate_ics(sheet_aventurier, "parents")
     with open("calendriers/parents_aventurier.ics", "w", encoding="utf-8") as f:
-        f.write(parents_ics)
+        f.write(parents_aventurier)
 
-    animateurs_ics = generate_ics(rows, "animateurs")
+    animateurs_aventurier = generate_ics(sheet_aventurier, "animateurs")
     with open("calendriers/animateurs_aventurier.ics", "w", encoding="utf-8") as f:
-        f.write(animateurs_ics)
+        f.write(animateurs_aventurier)
+
+    parents_castor = generate_ics(sheet_castor, "parents")
+    with open("calendriers/parents_castor.ics", "w", encoding="utf-8") as f:
+        f.write(parents_castor)
+
+    animateurs_castor = generate_ics(sheet_castor, "animateurs")
+    with open("calendriers/animateurs_castor.ics", "w", encoding="utf-8") as f:
+        f.write(animateurs_castor)
 
 if __name__ == "__main__":
     main()
