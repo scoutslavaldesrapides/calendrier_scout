@@ -10,9 +10,7 @@ DTEND:20260829T013000Z
 SUMMARY:Première réunion
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:Première réunion.\n19:00 Début \n19:15 Ce qu'on a fait durant
-  l'été\n19:30 Retour sur l'année 2025-2026\n20:00 Visualiser les photos\n
- 21:30 Fin de la réunion
+DESCRIPTION:Première réunion.
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20260911-rencontre-de-parents
@@ -21,6 +19,142 @@ DTEND:20260912T000000Z
 SUMMARY:Rencontre de parents
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:Rencontre de parents
+DESCRIPTION:Rencontre de parents conjointes pour toutes les unités. 19h00
+ -20h00
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20260918-mont-e
+DTSTART:20260918T230000Z
+DTEND:20260919T003000Z
+SUMMARY:Montée
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Rencontre communes à toutes les unités pour accueillir les no
+ uveaux jeunes dans notre groupe et remettre des décorations aux jeunes et
+  aux animateurs.
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20260919-vente-de-calendriers
+DTSTART:20260919T130000Z
+DTEND:20260919T200000Z
+SUMMARY:Vente de calendriers
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Vente de calendrier
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20261030-r-union-halloween
+DTSTART:20261030T230000Z
+DTEND:20261031T003000Z
+SUMMARY:Réunion Halloween
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion thématique Halloween, Venez déguisés!!
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20261127-grand-plongeon
+DTSTART:20261128T000000Z
+DTEND:20261128T013000Z
+SUMMARY:Grand plongeon
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Engagement scout pour les Castors. Les parents sont invités à
+  y assister.
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20261204-dodo-de-no-l
+DTSTART:20261205T000000Z
+DTEND:20261205T150000Z
+SUMMARY:Dodo de Noël
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Dernière réunion avant le congé des fêtes
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20261205-distribution-de-publicit-s
+DTSTART:20261205T150000Z
+DTEND:20261205T190000Z
+SUMMARY:Distribution de publicités
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Distribution de publicités pour annoncer notre passage lors d
+ u ramasse-bouteille
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270108-r-union-sp-ciale
+DTSTART:20270109T000000Z
+DTEND:20270109T013000Z
+SUMMARY:Réunion spéciale
+LOCATION:
+DESCRIPTION:Sortie spéciale
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270109-collecte-de-bouteilles
+DTSTART:20270109T140000Z
+DTEND:20270109T210000Z
+SUMMARY:Collecte de bouteilles
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Collecte de bouteilles
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270205-camp-d-hiver
+DTSTART:20270205T050000Z
+DTEND:20270207T050000Z
+SUMMARY:Camp d'hiver
+LOCATION:
+DESCRIPTION:Camp d'hiver conjoint avec les Castors et les Louveteaux
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270305-r-union-annul-e
+DTSTART:20270305T050000Z
+DTEND:20270305T050000Z
+SUMMARY:RÉUNION ANNULÉE
+LOCATION:
+DESCRIPTION:RÉUNION ANNULÉE
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270320-distribution-de-publicit-s
+DTSTART:20270320T130000Z
+DTEND:20270320T180000Z
+SUMMARY:Distribution de publicités
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Distribution de publicités pour annoncer notre passage lors d
+ u ramasse-bouteille
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270326-r-union-annul-e
+DTSTART:20270326T040000Z
+DTEND:20270326T040000Z
+SUMMARY:RÉUNION ANNULÉE
+LOCATION:
+DESCRIPTION:RÉUNION ANNULÉE
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270402-collecte-de-bouteilles
+DTSTART:20270402T130000Z
+DTEND:20270402T200000Z
+SUMMARY:Collecte de bouteilles
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Collecte de bouteilles
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270604-derni-re-r-union-hebdomadaire
+DTSTART:20270604T230000Z
+DTEND:20270605T003000Z
+SUMMARY:Dernière réunion hebdomadaire
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Dernière réunion hebdomadaire
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270801-camp-d-t
+DTSTART:20270801T040000Z
+DTEND:20270806T040000Z
+SUMMARY:Camp d'été
+LOCATION:
+DESCRIPTION:Camp d'été
 END:VEVENT
 END:VCALENDAR
