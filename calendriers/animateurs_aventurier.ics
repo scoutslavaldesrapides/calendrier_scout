@@ -52,13 +52,57 @@ DESCRIPTION:Campagne de financement de vente de calendrier\nCette journée
   est pour aider les jeunes à vendre leurs calendriers
 END:VEVENT
 BEGIN:VEVENT
-UID:animateurs-20260925-aga
+UID:animateurs-20260925-r-union-de-ma-trise
 DTSTART:20260925T230000Z
-DTEND:20260926T000000Z
-SUMMARY:AGA
+DTEND:20260926T013000Z
+SUMMARY:Réunion de maîtrise
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:Assemblée générale\nUn parent par enfant
+DESCRIPTION:Réunion de maîtrise\n19h00: Début\n19h15: Présentation du cah
+ ier de progression aux nouveaux\nAvec les anciens, faire une liste de mat
+ ériel pertinant pour un bac de réunion\n    -> Ex : Crayons, papier, fils
+  à coudre, etc.\n20h00: Jeu (Kiara et Ève)\n20h45: Réunion de patrouille\
+ n    -> Ce qui devrait avoir dans une réunion type\n    -> Préparation de
+  la prochaine réunion\n21h15: Fêtes de septembre (Ève s'occupe du gâteau)
+ \n21h30: Fin de la réunion
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20261002-r-union-de-patrouille
+DTSTART:20261002T230000Z
+DTEND:20261003T013000Z
+SUMMARY:Réunion de patrouille
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de patrouille
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20261009-r-union-de-ma-trise
+DTSTART:20261009T230000Z
+DTEND:20261010T013000Z
+SUMMARY:Réunion de maîtrise
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de maîtrise
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20261016-r-union-de-ma-trise
+DTSTART:20261016T230000Z
+DTEND:20261017T013000Z
+SUMMARY:Réunion de maîtrise
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de maîtrise\nCertains jeunes seront au camp Aiglon (C
+ P et SP seulement)
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20261016-camp-aiglon
+DTSTART:20261016T230000Z
+DTEND:20261018T160000Z
+SUMMARY:Camp Aiglon
+LOCATION:Colonie Ste-Jeanne-d'Arc, 10020 Rte Marie-Victorin, Contrecoeur,
+  QC J0L 1C0
+DESCRIPTION:Camp Aiglon seulement pour les CP et SP. Les autres jeunes on
+ t une réunion
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20261023-camp-d-automne
@@ -77,6 +121,42 @@ SUMMARY:Réunion d'Halloween
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
 DESCRIPTION:Réunion d'Halloween\nRéunion déguisé
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20261106-r-union-de-patrouille
+DTSTART:20261107T000000Z
+DTEND:20261107T023000Z
+SUMMARY:Réunion de patrouille
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de patrouille
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20261113-r-union-de-ma-trise
+DTSTART:20261114T000000Z
+DTEND:20261114T023000Z
+SUMMARY:Réunion de maîtrise
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de maîtrise
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20261120-r-union-de-haute-patrouille
+DTSTART:20261121T000000Z
+DTEND:20261121T023000Z
+SUMMARY:Réunion de Haute-Patrouille
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de Haute-Patrouille
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20261127-r-union-de-ma-trise
+DTSTART:20261128T000000Z
+DTEND:20261128T023000Z
+SUMMARY:Réunion de maîtrise
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de maîtrise
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20261204-r-union-de-no-l-dodo-au-local
@@ -111,13 +191,13 @@ DESCRIPTION:Promesse aventurier\nL'après-midi du 5 décembre sera pour la
  s sont invités à y assister
 END:VEVENT
 BEGIN:VEVENT
-UID:animateurs-20270108-reprise-des-r-union
+UID:animateurs-20270108-r-union-de-patrouille
 DTSTART:20270109T000000Z
 DTEND:20270109T023000Z
-SUMMARY:Reprise des réunion
+SUMMARY:Réunion de patrouille
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:Première réunion de Janvier
+DESCRIPTION:Première réunion de Janvier\nRéunion de patrouille
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20270109-collecte-de-bouteilles-janvier
@@ -129,6 +209,59 @@ LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
 DESCRIPTION:Campagne de financement de collecte de bouteilles
 END:VEVENT
 BEGIN:VEVENT
+UID:animateurs-20270115-r-union-de-ma-trise
+DTSTART:20270116T000000Z
+DTEND:20270116T023000Z
+SUMMARY:Réunion de maîtrise
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de maîtrise
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270122-r-union-de-haute-patrouille
+DTSTART:20270123T000000Z
+DTEND:20270123T023000Z
+SUMMARY:Réunion de Haute-Patrouille
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de Haute-Patrouille
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270129-camp-d-hiver
+DTSTART:20270130T000000Z
+DTEND:20270131T210000Z
+SUMMARY:Camp d'hiver
+LOCATION:Lieu à déterminer
+DESCRIPTION:Camp d'hiver\nDates et lieu à confirmer
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270205-r-union-de-patrouille
+DTSTART:20270206T000000Z
+DTEND:20270206T023000Z
+SUMMARY:Réunion de patrouille
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de patrouille
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270212-r-union-de-ma-trise
+DTSTART:20270213T000000Z
+DTEND:20270213T023000Z
+SUMMARY:Réunion de maîtrise
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de maîtrise
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270219-r-union-de-haute-patrouille
+DTSTART:20270220T000000Z
+DTEND:20270220T023000Z
+SUMMARY:Réunion de Haute-Patrouille
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de Haute-Patrouille
+END:VEVENT
+BEGIN:VEVENT
 UID:animateurs-20270226-f-te-de-bp
 DTSTART:20270227T000000Z
 DTEND:20270227T023000Z
@@ -136,6 +269,32 @@ SUMMARY:Fête de BP
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
 DESCRIPTION:Réunion spécial pour la semaine scoute
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270305-annul-semaine-de-rel-che
+DTSTART:20270306T000000Z
+DTEND:20270306T020000Z
+SUMMARY:ANNULÉ - SEMAINE DE RELÂCHE
+LOCATION:
+DESCRIPTION:Pas de réunion - Semaine de relache
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270312-r-union-de-patrouille
+DTSTART:20270313T000000Z
+DTEND:20270313T023000Z
+SUMMARY:Réunion de patrouille
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de patrouille
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270319-r-union-de-ma-trise
+DTSTART:20270319T230000Z
+DTEND:20270320T013000Z
+SUMMARY:Réunion de maîtrise
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de maîtrise
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20270320-distribution-de-publicit
@@ -148,13 +307,21 @@ DESCRIPTION:Distribution de publicités en vue de notre collecte de boutei
  lles du 3 avril 2027
 END:VEVENT
 BEGIN:VEVENT
-UID:animateurs-20270326-pas-de-r-union-semaine-de-rel-che
+UID:animateurs-20270326-r-union-de-haute-patrouille
 DTSTART:20270326T230000Z
 DTEND:20270327T013000Z
-SUMMARY:Pas de réunion - Semaine de relâche
+SUMMARY:Réunion de Haute-Patrouille
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
-DESCRIPTION:Pas de réunion - Semaine de relâche
+DESCRIPTION:Réunion de Haute-Patrouille
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270402-annul-semaine-de-p-ques
+DTSTART:20270402T230000Z
+DTEND:20270403T010000Z
+SUMMARY:ANNULÉ - SEMAINE DE PÂQUES
+LOCATION:
+DESCRIPTION:Pas de réunion - Semaine de Pâques
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20270403-collecte-de-bouteilles-avril
@@ -164,6 +331,86 @@ SUMMARY:Collecte de bouteilles Avril
 LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
  es
 DESCRIPTION:Campagne de financement de collecte de bouteilles
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270409-r-union-de-patrouille
+DTSTART:20270409T230000Z
+DTEND:20270410T013000Z
+SUMMARY:Réunion de patrouille
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de patrouille
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270416-r-union-de-ma-trise
+DTSTART:20270416T230000Z
+DTEND:20270417T013000Z
+SUMMARY:Réunion de maîtrise
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de maîtrise
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270423-r-union-de-haute-patrouille
+DTSTART:20270423T230000Z
+DTEND:20270424T013000Z
+SUMMARY:Réunion de Haute-Patrouille
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de Haute-Patrouille
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270430-r-union-de-ma-trise
+DTSTART:20270430T230000Z
+DTEND:20270501T013000Z
+SUMMARY:Réunion de maîtrise
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de maîtrise
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270505-collecte-de-rue
+DTSTART:20270505T160000Z
+DTEND:20270505T170000Z
+SUMMARY:Collecte de rue
+LOCATION:Lieu à déterminer
+DESCRIPTION:Collecte de rue\nDates et lieu à déterminer\nCampagne de fina
+ ncement habituellement en Mai
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270507-r-union-de-patrouille
+DTSTART:20270507T230000Z
+DTEND:20270508T013000Z
+SUMMARY:Réunion de patrouille
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de patrouille
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270514-r-union-de-ma-trise
+DTSTART:20270514T230000Z
+DTEND:20270515T013000Z
+SUMMARY:Réunion de maîtrise
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de maîtrise
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270521-r-union-de-haute-patrouille
+DTSTART:20270521T230000Z
+DTEND:20270522T013000Z
+SUMMARY:Réunion de Haute-Patrouille
+LOCATION:Centre communautaire Laval-des-Rapides, 387 boulevard des Prairi
+ es
+DESCRIPTION:Réunion de Haute-Patrouille
+END:VEVENT
+BEGIN:VEVENT
+UID:animateurs-20270528-camp-de-printemps
+DTSTART:20270528T230000Z
+DTEND:20270530T200000Z
+SUMMARY:Camp de printemps
+LOCATION:Lieu à déterminer
+DESCRIPTION:Camp de printemps\nLieu et dates à déterminer
 END:VEVENT
 BEGIN:VEVENT
 UID:animateurs-20270604-derni-re-r-union
@@ -180,6 +427,6 @@ DTSTART:20270711T130000Z
 DTEND:20270718T180000Z
 SUMMARY:Camp d'été aventurier
 LOCATION:Lieu à déterminer
-DESCRIPTION:
+DESCRIPTION:Camp d'été\nLieu et dates à déterminer
 END:VEVENT
 END:VCALENDAR
